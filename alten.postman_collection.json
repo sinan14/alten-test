@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "dd7e2104-9f4b-434f-9c20-07f436c0543b",
+		"name": "alten",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15625067"
+	},
+	"item": [
+		{
+			"name": "upload diagnostic logs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/sinuz/Downloads/Coding Test Fullstack Application/vehicle_diagnostics_logs1.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get logs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/logs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"logs"
+					],
+					"query": [
+						{
+							"key": "vechicle",
+							"value": "\"'",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "\"\"",
+							"disabled": true
+						},
+						{
+							"key": "from",
+							"value": "\"\"",
+							"disabled": true
+						},
+						{
+							"key": "to",
+							"value": "\"\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

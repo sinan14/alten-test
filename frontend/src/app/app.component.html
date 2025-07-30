@@ -1,0 +1,6 @@
+<div class="container mt-4">
+  <h2 class="mb-3">🚘 Vehicle Diagnostics Dashboard</h2>
+  <app-upload (onUpload)="onUpload($event)"></app-upload>
+  <app-filter (filterChange)="onFilterChange($event)"></app-filter>
+  <app-table [logs]="logs"></app-table>
+</div>

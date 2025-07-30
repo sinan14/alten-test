@@ -1,0 +1,24 @@
+@if (logs.length) {
+<table class="table table-bordered table-striped mt-3">
+  <thead>
+    <tr>
+      <th>Timestamp</th>
+      <th>Vehicle ID</th>
+      <th>Type</th>
+      <th>Code</th>
+      <th>Message</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (log of logs; track log.id) {
+    <tr>
+      <td>{{ log.timestamp }}</td>
+      <td>{{ log.vehicleId }}</td>
+      <td>{{ log.type }}</td>
+      <td>{{ log.code }}</td>
+      <td>{{ log.message }}</td>
+    </tr>
+    }
+  </tbody>
+</table>
+}

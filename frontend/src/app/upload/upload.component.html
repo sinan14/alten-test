@@ -1,0 +1,11 @@
+<div class="mb-3">
+  <input
+    type="file"
+    #fileInput
+    (change)="onChangeFile($event)"
+    class="form-control"
+  />
+  <button class="btn btn-primary mt-2" type="submit" (click)="upload()">
+    Upload file
+  </button>
+</div>
